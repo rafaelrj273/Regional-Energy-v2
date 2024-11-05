@@ -1,0 +1,87 @@
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+
+
+
+
+/*---------------------------------------------*/
+
+
+
+/*---------------------------------------------*/
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact 1 ]*/
+
+.contact1 {
+  width: 100%;
+  min-height: 100%;
+  padding: 15px;
+
+  background: #c46602;
+  background: -webkit-linear-gradient(left, #c46602b5, #c46602);
+  background: -o-linear-gradient(left, #c46602b5, #c46602);
+  background: -moz-linear-gradient(left, #c46602b5, #c46602);
+  background: linear-gradient(left, #c46602b5, #00c6ff);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact1 {
+  width: 1163px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 90px 30px 88px 48px;
+}
+
+/*------------------------------------------------------------------
+[  ]*/
+.contact1-pic {
+  width: 296px;
+ 
+  
+}
+
+.contact1-pic img {
+  max-width: 100%;
+  
+}
+
+img {
+
+  margin-left: 120%;
+}
+

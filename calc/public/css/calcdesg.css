@@ -1,0 +1,77 @@
+.form-calc {
+    align-items: center;
+}
+
+.main-form {
+    margin-top: 1%;
+    padding: 5%;
+    background: url("/assets/img/calc.jpg") top center;
+    background-position:bottom;
+  background-size:cover;
+  position: relative;
+  z-index: 2;
+  
+  padding-bottom: 1%;
+  overflow: hidden;
+    border-radius: 10px;
+    
+   
+}
+
+.main-form:before {
+    content: "";
+    background: rgba(196, 102, 2, 0.55);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+.form-group label {
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+.form-control {
+  margin-right: 5%;
+}
+
+.btn-pos  {
+    position:absolute;
+     bottom: 950%;
+     left:50%;
+     
+}
+
+.result-calc{
+
+  font-size: 100px;
+  text-shadow: 1px 1px 1px black;
+  position:absolute;
+  bottom: 750%;
+  left:10%;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #c46602c9
+  ;
+  
+}
+
+.btn-design {
+    font-size: 36px;
+    background-color: #c46602;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    padding: 5%;
+    
+}
+
+.btn-design:hover {
+    background-color: #ff6a00;
+    color: rgb(222, 159, 0);
+    text-shadow: 1px 1px 1px black;
+}

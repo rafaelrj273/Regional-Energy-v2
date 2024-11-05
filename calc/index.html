@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <title>Calculadora</title>
+	<meta charSet="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="description" content="Empresa de energia fotovotáica">
+	<meta id="meta-description" name="description" content="Fazemos você e reduzir a complexidade e os custos de energia e economizar." data-gatsby-head="true" />
+	<meta name="keywords" content="">
+
+
+	<!--===============================================================================================-->
+
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-568WV9N');</script>
+	<!-- End Google Tag Manager -->
+
+  <link href="../logo.ico" rel="icon">
+  <link href="../logo.ico" rel="apple-touch-icon">
+	<!--===============================================================================================-->
+  
+  <title>Consumo de Energia</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- 
+
+========================== 
+
+-->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="/calc/public/css/main.css">
+<link rel="stylesheet" href="/calc/public/css/calcdesg.css">
+
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    footer li {
+      display: inline-block;
+      padding-left: 12px;
+    }
+
+    #aboutText p {
+      text-align: justify;
+    }
+
+    .removeButton {
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: none;
+      color: red;
+    }
+
+    #githubIcon {
+      width: 22px;
+      height: auto;
+    }
+  </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVPXWY7ZKE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HVPXWY7ZKE');
+</script>
+
+
+</head>
+
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top d-flex align-items-center">
+
+
+	<div class="container d-flex align-items-center justify-content-between">
+   
+   
+   
+	  <div class="logo">
+		<h1 class="text-light">    
+   <a href="/">Regional Energy</a></h1>
+		<!-- Uncomment below if you prefer to use an image logo -->
+		<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+	  </div>
+   
+	  
+   
+	  <nav id="navbar" class="navbar">
+		<ul>
+		  <li><a  href="/">Página inicial</a></li>
+		  <li><a  href="../sobre/quemsomos.html">Quem somos</a></li>
+		  <li class="dropdown"><a  href="#"><span>Parceiros</span> <i class="bi bi-chevron-down"></i></a>
+			<ul>
+			  <li><a  href="../parceiros/anjosolar.html">Anjo-solar</a></li>
+			  <li><a href="../parceiros/lxe.html">LXE-construtora</a></li>
+			  <li><a  href="../parceiros/vg.html">Valentim Guimarães</a></li>
+			  <li><a  href="../parceiros/seteQuedas.html">Sete Quedas</a></li>
+			  <li><a  href="../parceiros/LocaAqui.html">loca-aqui</a></li>
+			  <li><a  href="../parceiros/alertasolar.html">Alerta Solar</a></li>
+			  <li><a href="../parceiros/wcb.html">W.C.B - World Carbon Bank</a></li>
+			</li>
+		  </ul>
+		  </li>
+		  <li class="dropdown"><a href="#"><span>Galeria</span> <i class="bi bi-chevron-down"></i></a>
+        <ul>
+          <li><a href="../galery/fotos.html">Fotos</a></li>
+          <li><a href="../galery/videos.html">Vídeos</a></li>
+        </li>
+      </ul>
+		  <li class="dropdown"><a class="active" href="#"><span>Outros</span> <i class="bi bi-chevron-down"></i></a>
+			<ul>
+			  <li><a href="https://contato.regionalenergy.com.br/forms/">Orçamento</a></li>
+			  <li><a class="active" href="../calc/index.html">Calcular consumo</a></li>
+			  <li><a href="#">FAQ</a></li>
+			</li>
+		  </ul>
+		  
+		  
+   
+		  <li><a class="getstarted" href="https://wa.me/+55021989007701">Whatsapp</a></li>
+		</ul>
+		<i class="bi bi-list mobile-nav-toggle"></i>
+	  </nav><!-- .navbar -->
+   
+	</div>
+   </header><!-- End Header -->
+   
+   <!-- ======= Hero Section ======= -->
+   <section id="hero">
+	<div class="hero-container" data-aos="fade-up">
+	  <h1>Regional Energy</h1>
+	  <h2>A Marca Líder
+		em Energia Solar</h2>
+		<a class="btn-get-started" href="https://contato.regionalenergy.com.br/forms/">Fazer orçamento</a>
+	   
+	</div>
+   </section>
+   
+
+
+<body>
+
+
+  
+	<!--===============================================================================================-->
+
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-568WV9N"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	<!--===============================================================================================-->
+ 
+      <div class="form-calc">
+        <div class="contact1" >
+          <div class="container-contact1">
+            <div class="contact1-pic js-tilt" data-tilt>
+              <img src="/assets/img/img24.jpg" alt="IMG">
+            </div>
+      
+    <div class="container-fluid">
+<hr>
+      <div class="container" >
+
+      </div>
+
+      <div class="container" style="margin-top: 10px; margin-bottom: 250px;" >
+        <div style="padding-bottom: 6px;">
+          <h1>Calcule seu consumo de eletrecidade!</h1>
+        </div>
+
+        <form class="main-form needs-validation" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <label>Nome</label>
+              <input id="inputDeviceName" type="text" class="form-control" value="" placeholder="Ex: Geladeira">
+            </div>
+            <div class="form-group col-md-2">
+              <label>Quantidade</label>
+              <input id="inputAmountDevices" type="number" min="1" class="form-control" value="">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label>Potência Elétrica</label>
+              <input type="range" class="form-control-range" id="inputPowerEletric" value="50" min="1" max="1000"
+                step="0.5" oninput="displayRange.value=value" onchange="displayRange.value=value">
+              <br>
+              
+              <input type="number" class="form-control form-control-sm"  id="displayRange" min="1"
+                  style=" text-align: center; width: 100px;" 
+                  onchange="inputPowerEletric.value=value">
+                </input>
+                
+            </div>
+            <div class="form-group col-md-2">
+              <br>
+              <select id="cbPowerEletricScale" class="form-control" onmousedown="this.value='';">
+                <option selected>Watts</option>
+                <option>Kilo Watts</option>
+                <option>Mega Watts</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-3" style="padding-right: 0px;">
+              <label>Uso médio por dia</label>
+              <input id="inputUseDuration" type="number" min="1" class="form-control">
+            </div>
+
+            <div class="form-group col-md-2" style="padding-left: 0px;">
+
+              <select id="cbTimeUseType" style= " margin-top: 32px; " class="form-control" onmousedown="this.value='';">
+                <option selected>Horas</option>
+                <option>Minutos</option>~
+                <option>Segundos</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-6" style="padding-left: 20%;" >
+              <label>Período de Consumo</label>
+              <div class="input-group">
+                <input id="inputPeriod" type="number" min="1" class="form-control">
+                <div class="input-group-append">
+                  <span class="input-group-text">Dias</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <label id="cont">Empresa de Energia</label>
+              <select id="cbPowerSupply" class="form-control" onmousedown="this.value='';">
+                <option disabled selected style=" display: none;"></option>
+              </select>
+            </div>
+          </div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col-md-5 btn">
+            <button id="submitButton" class="btn btn-design btn-pos" onclick="calculate()">Calcular</button>
+          </div>
+          <div class="col-md-3"  >
+            <!-- <h2 class="text-center" id="resultText">teste</h2> -->
+            <h2 class="result-calc" id="resultText" style="display: none;"></h2>
+          </div>
+
+        <!-- <hr> -->
+      </div>
+    </div> <!-- calculator -->
+
+
+
+    <section id="results">
+      <div class="container" style="margin-top: 100px;height: 800px">
+        <div>
+          <!-- <h2 class="text-center" id=""></h2> -->
+          <h2 style="padding-bottom: 8px;">Resultados</h2>
+
+        </div>
+        <table class=" table table-striped" id="resultTable">
+          <!-- style=" display: none " -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>Nome</th>
+              <th>Quantidade</th>
+              <th>Uso médio por dia</th>
+              <th>Consumo Elétrico</th>
+              <th>Período de Uso</th>
+              <th>Fornecedora</th>
+              <th>Custo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </section><!-- results -->
+
+
+    <br>
+
+  </div>
+  <!--container-->
+
+		</div>
+		</div>
+	</div>
+
+
+
+  
+
+
+  <footer class=" container py-5">
+    <div class=" row ">
+      <div class=" col-6 col-md ">
+        <ul class=" list-unstyled text-small">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+          <a class=" text-muted " href="https://instagram.com/FwebArt_computing" target="_blank"
+              style="text-decoration:none">&ensp; FwebArt</a></li>
+          <li><small class=" d-block mb-3 text-muted ">© 2024</small></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- js -->
+ 
+  <script src="../assets/js/main.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  <script src="main.js "></script>
+  <script>
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function (event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    })
+  </script>
+</body>
+
+</html>

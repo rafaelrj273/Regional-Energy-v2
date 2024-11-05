@@ -1,0 +1,22 @@
+/* Estilo para o container de consentimento de cookies */
+.cookie-consent-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9c425;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    color: aliceblue;
+}
+
+/* Botão para aceitar os cookies */
+#acceptCookieConsent {
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #3e4d7d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
